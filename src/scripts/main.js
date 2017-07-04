@@ -10,12 +10,15 @@ let mainInput3 = document.querySelector('.input--maxNumber');
 let submitButton = document.querySelector('.main-form__button--submit');
 let resetButton = document.querySelector('.main-form__button--reset');
 
-mainForm.addEventListener('submit', () => {
+mainForm.addEventListener('submit', (e) => {
+	
 	let number = mainInput1.value;
 	let minNumber = mainInput2.value;
 	let maxNumber = mainInput3.value;
 
 	let random = new RandomOrg({ apiKey: ApiKey });
+	
+	e.preventDefault();
 
 	random.generateIntegers({ 
 		n: number,
