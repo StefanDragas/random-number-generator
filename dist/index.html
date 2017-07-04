@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random.org App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-widthdevice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+  	<nav class="navbar main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Random.org Number Generator</a>
+        </div>
+      </div>
+    </nav>
+	<div class="container">
+		<h1 class="main-title">Random.org Number Generator</h1>
+		<h3 class="main-subtitle">Enter some random numbers down below:</h1>
+		<form method="get" action="#" id="main-form" class="field">
+			<div class="main-form__input-container">
+				<span class="main-form__sub-title">Please enter how many numbers you would like</span>
+				<input type="text" class="form-control input main-input--number" id="main-input">
+			</div>
+			<div class="main-form__input-container">
+				<span class="main-form__sub-title">Please enter the minimum number</span>
+				<input type="text" class="form-control input input--minNumber" id="main-input">
+			</div>
+			<div class="main-form__input-container">
+				<span class="main-form__sub-title">Please enter the maximum number</span>
+				<input type="text" class="form-control input input--maxNumber" id="main-input">
+			</div>
+			<div class="main-form__button-container">
+				<button type="submit" class="btn btn-primary main-form__button--submit">Get Numbers</button>
+				<button type="submit"class="btn btn-danger main-form__button--reset">Reset Numbers</button>
+			</div>
+		</form>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3 id="target">
+				</h3>
+			</div>
+		</div>
+	</div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
