@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "random-org": "^0.1.6"
+    "random-org": "^2.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
